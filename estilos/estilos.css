@@ -1,0 +1,80 @@
+.fondo{
+    background-image: url("../imagenes/principal_6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gris{
+    background-color: lightgray;
+}
+.fondo2{
+    background-image: url("../imagenes/taller_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.fondo3{
+    background-image: url("../imagenes/IMG-20210518-WA0003.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.fondo4{
+    background-image: url("../imagenes/couple-of-tourists-with-backpacks-on-mountain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fondo5{
+    background-image: url("../imagenes/persona-jugando-ajedrez_93675-73177.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.elazul{
+    background-color:#34495E  ;
+}
+
+.alto{
+    height: 75vh;
+}
+.alto2{
+    height: 50vh;
+}
+
+.tprincipal{
+    margin-top: 250px;
+}
+/*.tprincipal2{
+    margin-top: 80px;
+}*/
+.sobrepuesto{
+    position: relative;
+}
+.sobrepuestohijo{
+    position: absolute;
+    z-index: 1000;
+    top: 95%;
+    left: 5%;
+    right: 5%;
+    width: 75%;
+}
+@media only screen and (min-width: 100px) and (max-width: 900px){
+    .desaparece{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 900px){
+    .alto{
+        height: auto;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:900px){
+ .tprincipal {
+    margin-top: 190px;
+    
+    }
+}
