@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>pagina</title>
-    <!--metas-->
+    <title>El Juego del Dinero | </title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--links-->
-    <link rel="icon" type="image/png" href="imagenes/logo_juegodinero.png">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"  type="text/css"  onload="this.onload=null;this.rel='stylesheet'" href="estilos/estilos.css">
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"  type="text/css" onload="this.onload=null;this.rel='stylesheet'" href="sass/customizar.css" >
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"   onload="this.onload=null;this.rel='stylesheet'" href="sass/customizar.css" >
+<!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"  >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500&display=swap" rel="stylesheet"> 
+-->
+
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <style type="text/css">
-        
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    
+    
+        <style type="text/css">
+            body{
+                font-family: 'Roboto', sans-serif;
+            }
+    
+            
+        </style>
 </head>
 <body>
 
-    <!--  menu de navegación  -->
+    <!--  menu de navegación  
 	<nav class="navbar navbar-expand-lg navbar-light bg-primary shadow">
         <div class="container ">
-            
                 <a class="navbar-brand" href="index.html">
                     <img src="imagenes/logo_juegodinero.png"alt="logo" width="130" height="55">
                 </a>
@@ -32,34 +44,180 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-bold">
-                        <li class="nav-item" >
-                            <a class="nav-link active text-light" aria-current="page" href="emprendimiento.html"> Inicio </a>
-                        </li>
-                        <li class="nav-item" >
-                            <a class="nav-link text-light" aria-current="page" href="emprendimiento.html"> emprendimiento consciente </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-light" href="juego.html">el juego del dinero</a>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item dropdown" >
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-light " role="button" data-bs-toggle="dropdown"  aria-expanded="false" href="#"> Talleres</a>
                         </li>
                     </ul>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li class=""><a class="dropdown-item " href="emprendimiento.html"> Emprendimiento Consciente</a></li>
+                                    <li class=""><a class="dropdown-item " href="juego.html"> El Juego del Dinero </a></li>
+                        </ul>
+                    </li>
                 </div>
             
         </div>
-    </nav>
+    </nav>-->
+    <!--ootro-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <nav class="navbar navbar-expand-sm navbar border-bottom border-white border-1 bg-primary ">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="imagenes/eljuegoblanco.svg" width="80" height="auto"   alt=""> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li class=""><a class="dropdown-item fw-bold" href="emprendimiento.html"> Emprendimiento <br> Consciente</a></li>
+                                <li class=""><a class="dropdown-item fw-bold" href="juego.html"> El Juego <br> del Dinero </a></li>
+                            </ul>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <!--
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+    -->
+            <img src="imagenes/principal_6.jpg" class="img-fluid" alt="">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p>Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
 
-    <div class="jumbotron-fluid pt-5 pb-5 fondo sobrepuesto ">  <!-- seccion principal portada-->
-    	<div class="container pb-5 pt-5">
-     		<h1 class="display-5 fs-1 text-white fw-bold mb-3 "> Creación de Escenarios prácticos para una nueva generación de emprendedores conscientes</h1>
-      		<a class="btn btn-light text-primary fw-bold btn-lg" href="#registrate"> Conoce nuestros cursos </a>
+<!--
+          <div class="carousel-item">
+              
+            <img src="imagenes/ajedrez.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+             
+            <img src="imagenes/Recurso 1consciente.png" alt="">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        -->
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+    <!--nuevo
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+-->
+
+
+<!-- seccion principal portada-->
+<!--
+    <div class="jumbotron-fluid alto pb-5 fondo sobrepuesto ">  
+        <nav class="navbar navbar-expand-sm navbar border-bottom border-white border-1">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="imagenes/eljuegoblanco.svg" width="80" height="auto"   alt=""> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li class=""><a class="dropdown-item fw-bold" href="emprendimiento.html"> Emprendimiento <br> Consciente</a></li>
+                                <li class=""><a class="dropdown-item fw-bold" href="juego.html"> El Juego <br> del Dinero </a></li>
+                            </ul>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    	<div class="container py-5 mt-5">
+     		<h1 class=" text-white text-uppercase mb-3 text-center"> El Juego del Dinero</h1>
+             <p class="text-center text-white ">  Creación de Escenarios prácticos para una nueva generación de emprendedores conscientes  </p>
+      		<p class="text-center"><a class="btn btn-outline-light mt-5  " href="#registrate"> Conoce nuestros cursos </a></p>
     	</div>
-        <!-- sobrepuesto -->
-        <div class="container px-4 bg-light p-5 sobrepuestohijo desaparece shadow  ">
-            <h2 class="text-center mb-4 fw-bold">Comunidad de emprendimiento</h2>
+-
+
+        
+    
+       
+        <div class="container px-4 bg-light p-5 sobrepuestohijo desaparece shadow rounded ">
+            <h4 class="text-center mb-4 fw-bold text-uppercase ">Comunidad de emprendimiento</h4>
             <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
                 <div class="col ">
                     <div class=" bg-primary p-3 border rounded">
-                        <p class="text-white text-center">Jóvenes emprendedores que desean comenzar un negocio de nueva generación.</p>
+                        <p class=" text-center text-warning">Jóvenes emprendedores que desean comenzar un negocio de nueva generación.</p>
                     </div>
                 </div>
                 <div class="col">
@@ -80,6 +238,7 @@
             </div>
         </div>
   	</div>
+-->
 
 
     <div class="container px-4 bg-light p-5 ">
@@ -108,123 +267,150 @@
         </div>
     </div>
     
-
-		
-	<div class="container pb-5 pt-5 ">   <!-- seccion 2 -->
-		<div class="row"> 
-		    <div class="col-md-6 col-sm-12 col-xs-12">
-			    <h3 class="pb-3 fw-bold">Formación emprendedora enfocada en la creación de valor para el mundo.</h3>
-                <hr>
-			    <p>Los jóvenes emprendedores carecen de habilidades gerenciales, de liderazgo y planeación estratégica, no tienen conocimiento adecuado del mercado y cómo segmentarlo, ignoran cómo hacer marketing de respuesta rápida, cómo elaborar un plan de negocio enfocado a resolver los problemas del mercado objetivo, etc. Muchos dueños de negocio ignoran cómo utilizar de manera adecuada todas las herramientas disponibles para promocionarse en internet de tal manera que sus negocios puedan ser conocidos en todo el mundo y crecer exponencialmente.  </p>
-		    </div>
-		    <div class="col-md-6 col-sm-12 col-xs-12 ">
-			    <img src="imagenes/handsome-business-man-working-with-tablet-in-office.jpg" class="img-fluid rounded shadow" alt="kit de emprendimiento">	
-		    </div>
-		</div>
-    </div>
-
-    <!-- seccion 3  talleres-->
-    <div class="bg-primary">
-    <div class="container pb-5 pt-5 ">   
-		<div class="row"> 
-			<h3 class="pb-3 fw-bold">Nuestros Talleres</h3>
-			<p>Te ayudamos a comenzar con la mentalidad correcta en el mundo de los negocios: emprender desde la consciencia para maximizar las posibilidades de éxito en todos los proyectos. <br> <br> Cómo empezar a tomar acción masiva inmediata para crear más fuentes de ingreso progresivamente.  </p>
-            <div class="col bg-warning p-3">
-                <h5 class="fw-bold">Taller Emprendimiento Consciente </h5>
-                <p> descripcion  </p>
-                <img class="img-fluid rounded shadow" src="imagenes/catering-business.jpg"  alt="">
-                <p><a class="btn btn-light text-primary fw-bold btn-lg text-uppercase" href="#registrate"> Conocer más </a></p>
-            </div>
-            <div class="col">
-                <h5 class="fw-bold"> Taller El juego del dinero </h5>
-                <p>Tienen por objetivo trasladar el aprendizaje intelectual y motivacional a acciones aterrizadas en experiencias y aprendizajes directos que reduzcan tu curva de aprendizaje y te ahorren tiempo y dinero en cursos y/o entrenamientos obsoletos. Realiza cambios y obtén resultados a corto, mediano y largo plazo.  </p>
-                <img class="img-fluid"  src="imagenes/consulting-by-phone.jpg" alt="">
-                <p>Conocer más  </p>
-            </div>
-		</div>
-    </div>
-    </div>
-
-    <!-- seccion 4 -->
-    <div class="container pb-5 pt-5">   
-		<div class="row"> 
-		    <div class="col-md-6 col-sm-12 col-xs-12">
-				<h3 class="pb-3">Hemos ayudado a 11 generaciones de emprendedores y empresarios a conseguir resultados</h3>
-                <hr>
-				<p>Somos una comunidad que busca generar valor mediante talleres de emprendimiento práctico que transformen la mentalidad y la vida de millones de personas.  </p>
-                <h4>¿Cómo te ayudamos?  </h4>
-                <ul>
-                    <li>Velocidad de implementación. </li>
-                    <li>Motivación con base en resultados.</li>
-                    <li>Acción masiva inmediata.</li>
-                    <li>Corroboración directa de resultados.</li>
-                    <li>Simplificación de procesos de aprendizaje.</li>
-                </ul>
-			</div>
-			<div class="col-md-6 col-sm-12 col-xs-12 ">
-				<img src="imagenes/dos-socios-comerciales-que-trabajan-juntos-oficina-equipo_1303-25379.jpg" class="img-fluid " alt="kit de emprendimiento">	
-			</div>
-		</div>
-    </div>
-
-
-    <!-- seccion 3 -->
-    <div class="container pb-5 pt-5">   
-		<div class="row"> 
-			<h3 class="pb-3">Testimonios</h3>
-			<p> Nuestros miembros se gradúan sabiendo detectar oportunidades, resolver problemas y tomando acciones claras que se transforman en iniciativas de negocio de alto valor.  </p>
-		</div>
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 ">
-			<div class="col mb-3">
-				<div class="card ">
-					<div class="card-body">
-						<p> <em>Soy estilista. Me invitaron a este curso y he sacado muchas ventajas, entre una de ellas he aprendido a ser yo. Muchas cosas que yo no sabía, por fin las descubrí. Estando aquí en SharingMIND_ aprendes a ser tu a descubrir que todas las cosas que tú quieras, las puedes lograr, siempre y cuando la hagas con convicción y que tú quieras hacerlas, que te quites esas ideas de que “no puedes” “tengo miedo” porque nos atrasa mucho tiempo</em></p>
-						<p> <strong> Brenda Perez</strong>  <br> <em>  Estilista </em>   </p>
-					</div>
-				</div>
-			</div>
-			<div class="col mb-3">
-				<div class="card ">
-					<div class="card-body">
-						<p> <em>Soy estilista. Me invitaron a este curso y he sacado muchas ventajas, entre una de ellas he aprendido a ser yo. Muchas cosas que yo no sabía, por fin las descubrí. Estando aquí en SharingMIND_ aprendes a ser tu a descubrir que todas las cosas que tú quieras, las puedes lograr, siempre y cuando la hagas con convicción y que tú quieras hacerlas, que te quites esas ideas de que “no puedes” “tengo miedo” porque nos atrasa mucho tiempo</em></p>
-						<p> <strong> Brenda Perez</strong>  <br> <em>  Estilista </em>   </p>
-					</div>
-				</div>
-			</div>
-            <div class="col mb-3">
-				<div class="card ">
-					<div class="card-body">
-						<p> <em>Soy estilista. Me invitaron a este curso y he sacado muchas ventajas, entre una de ellas he aprendido a ser yo. Muchas cosas que yo no sabía, por fin las descubrí. Estando aquí en SharingMIND_ aprendes a ser tu a descubrir que todas las cosas que tú quieras, las puedes lograr, siempre y cuando la hagas con convicción y que tú quieras hacerlas, que te quites esas ideas de que “no puedes” “tengo miedo” porque nos atrasa mucho tiempo</em></p>
-						<p> <strong> Brenda Perez</strong>  <br> <em>  Estilista </em>   </p>
-					</div>
-				</div>
-			</div>
-		</div>	
-	</div>
-
-    <!-- footer  -->
-    <div class="container-fluid elazul ">
-        <div class="container text-white pt-5 pb-3">
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h5> Sobre nosotros </h5>
-                    <p> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqu</p>
+     <!-- seccion 2 -->
+    <div class="container-fluid py-5">
+        <div class="container pb-5 pt-5 ">  
+            <div class="row"> 
+                <div class="col-md-6 col-sm-12 col-xs-12 pe-5">
+                    <h3 class="pb-3 fw-bold text-uppercase">Formación emprendedora enfocada en la creación de valor para el mundo.</h3>
+                    <hr class="mb-4">
+                    <p class="">Los jóvenes emprendedores carecen de habilidades gerenciales, de liderazgo y planeación estratégica, no tienen conocimiento adecuado del mercado y cómo segmentarlo, ignoran cómo hacer marketing de respuesta rápida, cómo elaborar un plan de negocio enfocado a resolver los problemas del mercado objetivo, etc. Muchos dueños de negocio ignoran cómo utilizar de manera adecuada todas las herramientas disponibles para promocionarse en internet de tal manera que sus negocios puedan ser conocidos en todo el mundo y crecer exponencialmente.  </p>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <h5>Nuestros talleres </h5>
-                    <li>Emprendimiento conciente</li>
-                    <li>El juego del dinero</li>
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">  
-                    <h5>otros</h5>
-                    <p>Contacto</p>
+                <div class="col-md-6 col-sm-12 col-xs-12 ">
+                    <img src="imagenes/handsome-business-man-working-with-tablet-in-office.jpg" class="img-fluid rounded shadow" alt="kit de emprendimiento">	
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- seccion 3  talleres-->
+    <div class="container-fluid bg-primary py-5">
+        <div class="container pb-5 pt-5 ">    
+            <h3 class="pb-3 fw-bold text-uppercase text-warning text-center mb-4">Nuestros Talleres</h3>
+            <p class="text-white">Te ayudamos a comenzar con la mentalidad correcta en el mundo de los negocios: emprender desde la consciencia para maximizar las posibilidades de éxito en todos los proyectos. <br> <br> Cómo empezar a tomar acción masiva inmediata para crear más fuentes de ingreso progresivamente.  </p>
+            <div class="row row-cols-2 mt-5">    
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 25rem;">
+                        <img class="img-card-top img-fluid" src="imagenes/catering-business.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="fw-bold card-title text-uppercase">Taller Emprendimiento Consciente </h5>
+                            <p class="card-text"> descripcion  </p>
+                            <p><a class="btn btn-outline-primary" href="#registrate"> Conocer más </a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="card shadow" style="width: 25rem;">
+                        <img class="img-card-top img-fluid" src="imagenes/consulting-by-phone.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-uppercase"> Taller El juego del dinero </h5>
+                            <p class="small">Tienen por objetivo trasladar el aprendizaje intelectual y motivacional a acciones aterrizadas en experiencias y aprendizajes directos que reduzcan tu curva de aprendizaje y te ahorren tiempo y dinero en cursos y/o entrenamientos obsoletos. Realiza cambios y obtén resultados a corto, mediano y largo plazo.  </p>
+                            <p><a class="btn btn-outline-primary" href="#registrate"> Conocer más </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- seccion 4 -->
+    <div class="container-fluid py-5">
+        <div class="container pb-5 pt-5">   
+            <div class="row"> 
+                <div class="col-md-6 col-sm-12 col-xs-12 pe-4">
+                    <h3 class="mb-4 text-uppercase fw-bold">Hemos ayudado a 11 generaciones de emprendedores y empresarios a conseguir resultados</h3>
+                    <hr class="my-4">
+                    <p>Somos una comunidad que busca generar valor mediante talleres de emprendimiento práctico que transformen la mentalidad y la vida de millones de personas.  </p>
+                    <h6 class="text-uppercase  fw-bold my-4">¿Cómo te ayudamos?  </h6>
+                    <ul>
+                        <li>Velocidad de implementación. </li>
+                        <li>Motivación con base en resultados.</li>
+                        <li>Acción masiva inmediata.</li>
+                        <li>Corroboración directa de resultados.</li>
+                        <li>Simplificación de procesos de aprendizaje.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 ">
+                    <img src="imagenes/dos-socios-comerciales-que-trabajan-juntos-oficina-equipo_1303-25379.jpg" class="img-fluid " alt="kit de emprendimiento">	
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- seccion 3 -->
+    <div class="container-fluid py-5 gris">
+        <div class="container pb-5 pt-5">   
+            <div class="row"> 
+                <h3 class="mb-5 text-uppercase text-center fw-bold">Testimonios</h3>
+                <p> Nuestros miembros se gradúan sabiendo detectar oportunidades, resolver problemas y tomando acciones claras que se transforman en iniciativas de negocio de alto valor.  </p>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 mt-5">
+                <div class="col mb-3">
+                    <div class="card shadow p-3">
+                        <div class="card-body">
+                            <p class="small"> <em>Soy estilista. Me invitaron a este curso y he sacado muchas ventajas, entre una de ellas he aprendido a ser yo. Muchas cosas que yo no sabía, por fin las descubrí. Estando aquí en SharingMIND_ aprendes a ser tu a descubrir que todas las cosas que tú quieras, las puedes lograr, siempre y cuando la hagas con convicción y que tú quieras hacerlas, que te quites esas ideas de que “no puedes” “tengo miedo” porque nos atrasa mucho tiempo</em></p>
+                            <p> <strong> Brenda Perez</strong>  <br> <em>  Estilista </em>   </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card shadow p-3">
+                        <div class="card-body">
+                            <p class="small"> <em>Soy estilista. Me invitaron a este curso y he sacado muchas ventajas, entre una de ellas he aprendido a ser yo. Muchas cosas que yo no sabía, por fin las descubrí. Estando aquí en SharingMIND_ aprendes a ser tu a descubrir que todas las cosas que tú quieras, las puedes lograr, siempre y cuando la hagas con convicción y que tú quieras hacerlas, que te quites esas ideas de que “no puedes” “tengo miedo” porque nos atrasa mucho tiempo</em></p>
+                            <p> <strong> Brenda Perez</strong>  <br> <em>  Estilista </em>   </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card shadow p-3">
+                        <div class="card-body">
+                            <p class="small"> <em>Soy estilista. Me invitaron a este curso y he sacado muchas ventajas, entre una de ellas he aprendido a ser yo. Muchas cosas que yo no sabía, por fin las descubrí. Estando aquí en SharingMIND_ aprendes a ser tu a descubrir que todas las cosas que tú quieras, las puedes lograr, siempre y cuando la hagas con convicción y que tú quieras hacerlas, que te quites esas ideas de que “no puedes” “tengo miedo” porque nos atrasa mucho tiempo</em></p>
+                            <p> <strong> Brenda Perez</strong>  <br> <em>  Estilista </em>   </p>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <div class="container-fluid bg-primary ">
+        <div class="container text-white pt-5 pb-3">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12 ">
+                    <img class="img-fluid w-75" src="imagenes/eljuegoblanco.svg" alt="">
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h6 class="text-warning text-uppercase"> Nosotros</h6>
+                    <p class="small"> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqu</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h6 class="text-uppercase text-warning">Talleres </h6>
+                    <ul class="list-unstyled small">
+                        <li>Emprendimiento conciente</li>
+                        <li>El juego del dinero</li>
+                    </ul>
+                    
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">  
+                    <h6 class="text-warning text-uppercase">Contacto</h6>
+                    <p class="small">55 66448877</p>
+                </div>
+            </div>
+        </div>
+        <div class="py-3">
+            <p class="text-white mb-0 text-center "> <small> EL JUEGO DEL DINERO &nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;   </small>  <a class="text-decoration-none  text-white" href=""> Privacidad </a> </p>
+        </div>
+    </div>
+
    <!--scripts-->
    <script src="js/lazysizes.min.js" async=""></script> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" async></script>
+
+
+   
         
 </body>
 </html>
