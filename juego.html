@@ -11,44 +11,129 @@
     <!--links-->
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"  type="text/css"  onload="this.onload=null;this.rel='stylesheet'" href="estilos/estilos.css">
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"  type="text/css" onload="this.onload=null;this.rel='stylesheet'" href="sass/customizar.css" >
+
+
+    <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"  >
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 
 
     <style type="text/css">
-        
-    </style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
 
+    	
+    </style>
 </head>
 <body>
     <!--  menu de navegación  -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid ">
+    <!--
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top justify-content-center">
+        <div class="container justify-content-centers">
             <a class="navbar-brand" href="index.html">
-              <img src="imagenes/favicon.png"alt="logo" width="60" height="55">
+              <img class="img-fluid" src="imagenes/eljuegoblanco.svg"alt="logo" width="80" height="auto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="emprendimiento.html">emprendimiento conscinte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="juego.html">el juego del dinero</a>
-                    </li>
+            <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li class=""><a class="dropdown-item fw-bold" href="emprendimiento.html"> Emprendimiento <br> Consciente</a></li>
+                            <li class=""><a class="dropdown-item fw-bold" href="juego.html"> El Juego <br> del Dinero </a></li>
+                        </ul>
+                    </li>                   
                 </ul>
             </div>
         </div>
     </nav>
+    -->
+    
+
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+            <a class="mx-auto" href="#">
+                <img src="imagenes/eljuego.svg" class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cursos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    -->
+    <!-- 4 - contained in center example -->
+    <!--
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="imagenes/eljuegoblanco.svg" width="80" height="auto"   alt=""> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <li class=""><a class="dropdown-item fw-bold" href="emprendimiento.html"> Emprendimiento <br> Consciente</a></li>
+                        <li class=""><a class="dropdown-item fw-bold" href="juego.html"> El Juego <br> del Dinero </a></li>
+                    </ul>
+                </li>                   
+            </ul>
+        </div>
+    </div>
+</nav>
+    -->
     <!-- seccion 2 -->
-    <div class="jumbotron-fluid alto pt-5 pb-5 fondo2">  
+    <div class="jumbotron-fluid alto  pb-5 fondo2">  
+        <nav class="navbar navbar-expand-sm navbar border-bottom border-white border-1">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="imagenes/eljuegoblanco.svg" width="80" height="auto"   alt=""> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li class=""><a class="dropdown-item fw-bold" href="emprendimiento.html"> Emprendimiento <br> Consciente</a></li>
+                                <li class=""><a class="dropdown-item fw-bold" href="juego.html"> El Juego <br> del Dinero </a></li>
+                            </ul>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </nav>
     	<div class="container pb-5 pt-5 ">
-     		<h1 class="display-3 text-white fw-bold mb-3"> </h1>
-            <p class="text-white fw-bold pt-5 tprincipal text-center">Si estás más que listo para resolver de una vez por todas tus desafíos financieros y patrones de culpa, pena, dudas y deudas. Si quieres transformar tus creencias inconscientes sobre el dinero para vivir en plenitud y felicidad, entonces esto te interesa…</p>
+            <div class="d-flex mb-5">
+                <img class="img-fluid w-50 mx-auto" src="imagenes/eljuegoblanco.svg" alt="">
+            </div>
+            <p class="text-warning fw-bold principal text-center">Si estás más que listo para resolver de una vez por todas tus desafíos financieros y patrones de culpa, pena, dudas y deudas. Si quieres transformar tus creencias inconscientes sobre el dinero para vivir en plenitud y felicidad, entonces esto te interesa…</p>
     	</div>
   	</div>
     <!--seccion fecha y registro -->
@@ -64,45 +149,49 @@
                     <h4 class="text-center fs-6"><strong> Proxima fecha </strong></h4>
                 </div>
                 <div class="col border-start border-primary">
-                    <p class="text-center pt-3"> <a class="btn btn-secondary btn-lg text-white shadow" href="#registrate"> Regístrate </a></p>
+                    <p class="text-center pt-3"> <a class="btn btn-outline-primary  shadow" href="#registrate"> Regístrate </a></p>
                 </div>
             </div>
         </div>
     </div>
     <!-- seccion 2 -->
-    <div class="container-fluid fondo4 h-25">
-        <div class="container pb-5 pt-5">   
+    <div class="container-fluid fondo4 h-25 py-5">
+        <div class="container py-5">   
 		    <div class="row"> 
 		        <div class="col-md-6 col-sm-12 col-xs-12 ">	
 		        </div>
-                <div class="col-md-6 col-sm-12 col-xs-12 bg-light rounded shadow p-3">
+                <div class="col-md-6 col-sm-12 col-xs-12 bg-light rounded shadow p-5">
                     <svg width="70" height="20" > 
-                        <rect x="0" y="10" width="40" height="4" fill="#17202A" />
+                        <rect x="0" y="10" width="40" height="6" fill="#17202A" />
                     </svg>
-			        <h2 class="fs-4 fw-bold">Lo que descubrirás en el juego del dinero</h2>
+			        <h4 class=" fw-bold text-primary text-uppercase">Lo que descubrirás en el juego del dinero</h4>
                     <hr>
-			        <p >Descubre cómo puedes cambiar la forma de pensar al utilizar información nueva de tu cerebro y dejar atrás los archivos que contienen información que no te ha ayudado a salir de donde estás, aprende a actuar al instante, a tener nuevos patrones de comportamiento, a organizar y actuar hoy mismo, lo que te traerá multiples beneficios, reinventate y genera multiples fuentes de ingresos, empodérate con nuevas actitudes creencias y hábitos para tener desde ya los pensamiento que te traerán los ingresos, estilo de vida, amigos, salud y bienestar que tu quieres. </p>
-                    <p>No hablamos solo de dinero, eso es uno de los elementos que tendrás cuando entiendas porqué estabas obteniendo los mismos resultados cada vez que intentabas algo nuevo.
+			        <p class=" small">Descubre cómo puedes cambiar la forma de pensar al utilizar información nueva de tu cerebro y dejar atrás los archivos que contienen información que no te ha ayudado a salir de donde estás, aprende a actuar al instante, a tener nuevos patrones de comportamiento, a organizar y actuar hoy mismo, lo que te traerá multiples beneficios, reinventate y genera multiples fuentes de ingresos, empodérate con nuevas actitudes creencias y hábitos para tener desde ya los pensamiento que te traerán los ingresos, estilo de vida, amigos, salud y bienestar que tu quieres. </p>
+                    <p class="small">No hablamos solo de dinero, eso es uno de los elementos que tendrás cuando entiendas porqué estabas obteniendo los mismos resultados cada vez que intentabas algo nuevo.
                         entrena tu cerebro desde la maestría de estar consciente de ser, este es el secreto de multiples multimillonarios, para atraer la riqueza que necesitan, ven a aprender de quienes ya lo están aplicando.</p>
 		        </div>
 		    </div>
         </div>
     </div>
     <!-- seccion 2 -->
-    <div class="container-fluid bg-primary text-white text-center">
+    <div class="container-fluid bg-primary text-white text-center py-5">
         <div class="container pb-5 pt-5">   
 		    <div class="row"> 
 		        <div class="">
+                    <!--
                     <svg width="120" height="20" > 
-                        <rect x="0" y="10" width="60" height="8" fill="#17202A" />
+                        <rect x="0" y="10" width="60" height="8" fill="#fff" />
                     </svg>
-			        <h2 class="fs-4 fw-bold">Como jugar el juego interno del dinero</h2>
-                    <hr class="">
-			        <p>Descubre los patrones de conducta adquiridos durante tu niñez y desarrollo y como han influido inconscientemente en tu actitud ante el dinero: 
-                    <br><br>¿Cómo juegas el juego interno del dinero? 
-                    <br>¿Estás familiarizado con el fluir del dinero? 
-                    <br>¿En tu casa era un tema de alegría o de discusión?</p> 
-                    <br><p>Descubre que patrones y comportamientos hacen que juegues de manera eficiente el tema del dinero , alinearte con los principios de fluidez del dinero y descubre él proceso de la manifestación de la riqueza</p> 
+                    -->
+			        <h2 class=" fw-bold text-warning text-uppercase">Como jugar el juego interno del dinero</h2>
+                    <hr class="my-4">
+			        <p >Descubre los patrones de conducta adquiridos durante tu niñez y desarrollo y como han influido inconscientemente en tu actitud ante el dinero:</p>
+                    <p class="text-warning"> <br>
+                     <strong class="text-uppercase" >  ¿Cómo juegas el juego interno del dinero? </strong> 
+                    <br> <strong class="text-uppercase"> ¿Estás familiarizado con el fluir del dinero? </strong>
+                    <br> <strong class="text-uppercase" > ¿En tu casa era un tema de alegría o de discusión?</strong></p> 
+                    <br>
+                    <p>Descubre que patrones y comportamientos hacen que juegues de manera eficiente el tema del dinero , alinearte con los principios de fluidez del dinero y descubre él proceso de la manifestación de la riqueza</p> 
                     <br><p>Descubre cómo vivir una vida de plenitud a través de las mismas leyes que han jugado personas exitosas en el plano espiritual, mental y material en todo el mundo.</p>
                     <br><p> Ven a descubrir tus miedos ,pensamientos ,creencias, actitudes,patrones y comportamientos que hacen que el dinero se aleje de ti , elimínalos de una vez por todas</p>
 		        </div>
@@ -111,190 +200,276 @@
         </div>
     </div>
     <!-- seccion 2 -->
-    <div class="container-fluid">
-        <div class="container pb-5 pt-5">   
+    <div class="container-fluid py-5">
+        <div class="container py-5">   
 		    <div class="row"> 
 		        <div class="">
-                    <svg width="120" height="20" > 
-                        <rect x="0" y="10" width="60" height="8" fill="#17202A" />
-                    </svg>
-			        <h3 class="fw-bold">Esta oferta especial incluye ...</h3>
-                    <hr>
-			        <p>Todo lo que necesitas para ganar el juego del dinero. Incluyendo la mejora de tus habilidades y re-entrenamiento de su mente subconsciente con poderosas nuevas creencias y patrones de éxito. Acceso a docenas de horas de entrenamiento de  Liderazgo con German Borja y Mathilde Iñiguez en videos exclusivos, coaching y apoyo</p> 
+                   
+			        <h3 class="fw-bold text-center text-uppercase">Esta oferta especial incluye ...</h3>
+                    <hr class="my-4"> 
+			        <p>Todo lo que necesitas para ganar <strong class="text-warning"> el juego del dinero</strong>. Incluyendo la mejora de tus habilidades y re-entrenamiento de su mente subconsciente con poderosas nuevas creencias y patrones de éxito. Acceso a docenas de horas de entrenamiento de  <strong> Liderazgo</strong> con <strong> German Borja</strong> y <strong> Mathilde Iñiguez</strong> en videos exclusivos, coaching y apoyo</p> 
                     <p>
-                    Gana el juego del dinero - Gana el juego del cerebro para ponerte nuevamente en tu modo natural de abundancia, creatividad y felicidad original, como cuando eras niño  regresa  a tu modo natural de conseguir lo que quieras ya tienes toda la información solo hay que volver al origen para utilizar tus recursos ilimitados desde la consciencia.</p>
+                     Gana el juego del cerebro para ponerte nuevamente en tu modo natural de abundancia, creatividad y felicidad original, como cuando eras niño  regresa  a tu modo natural de conseguir lo que quieras ya tienes toda la información solo hay que volver al origen para utilizar tus recursos ilimitados desde la consciencia.</p>
                         
-                    <p>Después de más de 20 años de investigación y práctica en la maestría de estar consciente del ser, la maestría del intento y la maestría del acecho German Borja, Mathilde Iñiguez y su equipo  te enseñaran a poner en practica estos secretos toltecas que te ayudarán a estar siempre presente y crear multiples fuentes de ingreso desde la  maestría de estar consciente del ser
+                    <p>Después de más de 20 años de investigación y práctica en la maestría de estar consciente del ser, la maestría del intento y la maestría del acecho <strong> German Borja</strong>, <strong> Mathilde Iñiguez</strong> y su equipo  te enseñaran a poner en practica estos secretos toltecas que te ayudarán a estar siempre presente y crear multiples fuentes de ingreso desde la  maestría de estar consciente del ser
                     El origen de todo, complementa con ser tu propio líder para que puedas Liderar a otros aun sin quererlo, ingresa aun curso completo con Mathilde Iñiguez de España y Germán Borja de México.</p>
                         
-                    <p>Reinicia tus hábitos desde esta maestría probada a través de la historia y donde finalmente la ponemos a tu alcance, aunque en realidad siempre ha estado ahí pero no estás consciente de ello, disfruta de todas las herramientas de tu cerebro de una forma redirigida para obtener riqueza, mantén tu enfoque en la abundancia sin el menor esfuerzo, aprende como hacerlo de forma presencial desde el primer dia y te darás cuenta que el ser, conocer ,hacer y tener están a tu alcance desde ahora mismo</p>
+                    <p>Reinicia tus hábitos desde esta maestría probada a través de la historia y donde finalmente la ponemos a tu alcance, aunque en realidad siempre ha estado ahí pero no estás consciente de ello, disfruta de todas las herramientas de tu cerebro de una forma redirigida para obtener riqueza, mantén tu enfoque en la abundancia sin el menor esfuerzo, aprende como hacerlo de forma presencial desde el primer dia y te darás cuenta que el <strong> ser</strong>, <strong>conocer</strong>  , <strong> hacer</strong> y <strong> tener</strong>, están a tu alcance desde ahora mismo</p>
 		        </div>
 		    </div>
         </div>
     </div>
     <!--otra seccion -->
-    <div class="container">
+    <div class="container-fluid bg-primary py-5">
+        <div class="container py-5">
+
+        
         <div class="row">
-            <h3 class="fw-bold">SOLO VEN Y APRENDE COMO USAR EL DINERO A TU FAVOR Y COMO GANAR EL JUEGO</h3>
-            <hr>
-            <p>El dinero ha jugado un papel predominante en nuestra vida desde que estamos conscientes, o mejor dicho, desde que nos dimos cuenta que sirve para intercambiar las cosas o los servicios que queremos y necesitamos. Sin embargo, nada o muy poco hemos aprendido de la forma en cómo conseguirlo y mucho menos de cómo hacer que aumente, por él contrario, la información que nos transmitieron sobre el dinero fue y sigue siendo limitante y limitada.</p>
-            <p>Seguramente te has preguntado, ¿como si hay tanto dinero en el mundo yo no puedo tener lo suficiente para adquirir lo que deseo?</p>
-            <p>¿Como es posible que el dinero este guardado en las bóvedas de los bancos y en cifras electrónicas que por sismo no generan ningún valor?</p>
-            <h4>Entonces ¿Que es el Dinero?</h4>
+            <h3 class="text-warning fw-bold text-center">SOLO VEN Y APRENDE COMO USAR EL DINERO A TU FAVOR Y COMO GANAR EL JUEGO</h3>
+            <hr class="my-5 text-white">
+            <p class="text-white">El dinero ha jugado un papel predominante en nuestra vida desde que estamos conscientes, o mejor dicho, desde que nos dimos cuenta que sirve para intercambiar las cosas o los servicios que queremos y necesitamos. Sin embargo, nada o muy poco hemos aprendido de la forma en cómo conseguirlo y mucho menos de cómo hacer que aumente, por él contrario, la información que nos transmitieron sobre el dinero fue y sigue siendo limitante y limitada.</p>
+            <p class="text-white">Seguramente te has preguntado, ¿como si hay tanto dinero en el mundo yo no puedo tener lo suficiente para adquirir lo que deseo?</p>
+            <p class="text-white"> ¿Como es posible que el dinero este guardado en las bóvedas de los bancos y en cifras electrónicas que por sismo no generan ningún valor?</p>
+            <h4 class="text-warning text-center my-5 text-uppercase">Entonces ¿Que es el Dinero?</h4>
             <br>
-            <p>¿Por que creemos que es tan difícil conseguirlo y conservarlo para que  se multiplique?</p>
-            <p>El dinero es tan abundante en el mundo como la pobreza, si por un momento decidiéramos ser el más pobre del mundo, les aseguro que ahora mismo se construirían un plan concreto para lograrlo, ¿no es así?
+            <p class="text-white">¿Por que creemos que es tan difícil conseguirlo y conservarlo para que  se multiplique?</p>
+            <p class="text-white">El dinero es tan abundante en el mundo como la pobreza, si por un momento decidiéramos ser el más pobre del mundo, les aseguro que ahora mismo se construirían un plan concreto para lograrlo, ¿no es así?
             Regalo todo lo que tengo y me voy a vivir debajo de un puente  y listo, pero para poder llevar una vida así, tendríamos que tomar acciones de sobre vivencia a cada momento para no morir de hambre o frío o asesinados por un demente agresivo, entonces, ¿por que mejor no desarrollar un plan estratégico y financiero para ser esa persona que puede obtener dinero en todos lados y hacerlo que crezca exponencialmente?</p>
-            <p>Nos comunican todo el tiempo que la repartición de la riqueza en el mundo es totalmente injusta, ¿tú que piensas al espectro? Es probable que creas que cada quien tiene las cosas, resultado de las acciones y decisiones que ha tomado, que depende mejor dicho de las habilidades para conseguirlo y mantenerlo siempre baja acciones que lo hagan crecer.</p>
+            <p class="text-white">Nos comunican todo el tiempo que la repartición de la riqueza en el mundo es totalmente injusta, ¿tú que piensas al espectro? Es probable que creas que cada quien tiene las cosas, resultado de las acciones y decisiones que ha tomado, que depende mejor dicho de las habilidades para conseguirlo y mantenerlo siempre baja acciones que lo hagan crecer.</p>
             
         </div>
     </div>
+    </div>
     <!-- seccion 2 -->
-    <div class="container-fluid ">
-        <div class="container pb-5 pt-5">   
-		    <div class="row"> 
-                <div class="col-md-6 col-sm-12 col-xs-12 ">
-			        <h5 class="fw-bold">FLUYE CON LA RIQUEZA</h5>
-                    <p fw->Al convertirte en un ser mas alineado realizas los cambios internos y de consciencia para atraer mayores niveles de prosperidad, abundancia y riqueza, refuerza de manera natural tus creencias positivas del dinero y enfoca en la contribución para generar un flujo de efectivo que circule a través de ti, aceptas de una manera mas natural el dinero y entenderás que eres una fuente de atracción de la riqueza </p>
+    <div class="container-fluid fondo5 py-5">
+        <div class="container py-5">  
+            <h3 class="text-white text-center fw-bold text-uppercase mb-5">Logra tus metas con nuestro programa de alto rendimiento</h3>
+            <hr class="mb-5 text-white">
+            <!-- 
+		    <div class="row row-cols-2"> 
+                <div class="col mb-4">
+                    <div class="card shadow p-3">
+                        <h6 class="text-center fw-bold">FLUYE CON LA RIQUEZA</h6>
+                        <p class="small" >  Al convertirte en un ser mas alineado realizas los cambios internos y de consciencia para atraer mayores niveles de prosperidad, abundancia y riqueza, refuerza de manera natural tus creencias positivas del dinero y enfoca en la contribución para generar un flujo de efectivo que circule a través de ti, aceptas de una manera mas natural el dinero y entenderás que eres una fuente de atracción de la riqueza </p>
+                    </div>
                     
-                    <h5 class="fw-bold">ACCIÓN PERFECTA-IMPERFECTA-  API</h5>
-                    <p>Desde este nivel actúa ya a pesar del miedo, a pesar de no tener las condiciones ideales, actúa y perfecciona en  el camino, descubre como para tener un negocio lo único que necesitas es hacer la primer acción, iniciar ya a pesar del miedo, adquirirás un mejor carácter y descubrirás que hay cientos de cosas que ya habrías hecho de haber actuado cuando lo pensaste, fortalece la determinación interna, la persistencia, la tenacidad, la alegría por los resultados, fortalece tu autoestima ahora mismo</p>
+                </div>
 
-                    <h5 class="fw-bold">RESUELVE TUS HISTORIAS Y EXCUSAS</h5>
-                    <p>Descubre que las excusas y pretextos caen pos si mismas desde el momento de tomar acción, asociarlo con evento del pasado donde no actuaste por temor y miedo , fortalece esta creencia de "todo lo puedo" a través del teatro del infinito o desde la consciencia de ser, deja de una vez por todas las historias limitantes y obtén una imagen de ti mismo como cuando eras niño y todo lo podias, tenias poderes y eras el superhéroe, refuerza tu imagen de héroe y crea historias mas productivas que realicen y mantengan para siempre tu autoestima</p>
-
-                    <h5 class="fw-bold">ASOCIA LA RIQUEZA A TU VIDA DIARIA</h5>
-                    <p>Empieza a experimentar estos pensamientos y sentimientos de riqueza para que se conviertan en acciones y en resultados , manten este nivel energético diseñando tu dia, realiza las actividades que haz determinado para que generen confianza al obtener resultados, diseña el dia con los pensamientos y acciones de una persona rica y experimentarlo diario para vivir de esta forma</p>
-                
-		        </div>
-		        <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h5 class="fw-bold">TU NUEVA VERSIÓN</h5>
-                    <p>Al crear desde la consciencia, podrás utilizar tu cerebro con todas las herramientas de creatividad, diseño, emociones , pensamientos positivos, imaginación y todas estas herramientas para generar nuevas ideas que anotaras para poner en practica, pronto descubrirás que tendrás mas y mas ideas creativas de negocio y te sorprenderá recordar la manera cómo llegaste al curso y la nueva versión de ti mismo</p>
-                    
-                    <h5 class="fw-bold"> NUEVA FUENTE DE INGRESO</h5>
+                <div class="col mb-4">
+                    <div class="card shadow p-3">
+                        <h6 class="fw-bold text-center">ACCIÓN PERFECTA-IMPERFECTA- API</h6>
+                        <p class="small">Desde este nivel actúa ya a pesar del miedo, a pesar de no tener las condiciones ideales, actúa y perfecciona en  el camino, descubre como para tener un negocio lo único que necesitas es hacer la primer acción, iniciar ya a pesar del miedo, adquirirás un mejor carácter y descubrirás que hay cientos de cosas que ya habrías hecho de haber actuado cuando lo pensaste, fortalece la determinación interna, la persistencia, la tenacidad, la alegría por los resultados, fortalece tu autoestima ahora mismo</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow p-3 ">
+                        <h6 class="fw-bold text-center">RESUELVE TUS HISTORIAS Y EXCUSAS</h6>
+                        <p class="small">Descubre que las excusas y pretextos caen pos si mismas desde el momento de tomar acción, asociarlo con evento del pasado donde no actuaste por temor y miedo , fortalece esta creencia de "todo lo puedo" a través del teatro del infinito o desde la consciencia de ser, deja de una vez por todas las historias limitantes y obtén una imagen de ti mismo como cuando eras niño y todo lo podias, tenias poderes y eras el superhéroe, refuerza tu imagen de héroe y crea historias mas productivas que realicen y mantengan para siempre tu autoestima</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card p-3 shadow">
+                        <h6 class="fw-bold text-center">ASOCIA LA RIQUEZA A TU VIDA DIARIA</h6>
+                        <p class="small">Empieza a experimentar estos pensamientos y sentimientos de riqueza para que se conviertan en acciones y en resultados , manten este nivel energético diseñando tu dia, realiza las actividades que haz determinado para que generen confianza al obtener resultados, diseña el dia con los pensamientos y acciones de una persona rica y experimentarlo diario para vivir de esta forma</p>
+                    </div>
+                </div>
+                <div class="col mb-4" >
+                    <div class="card shadow p-3">
+                        <h6 class="fw-bold">TU NUEVA VERSIÓN</h6>
+                        <p>Al crear desde la consciencia, podrás utilizar tu cerebro con todas las herramientas de creatividad, diseño, emociones , pensamientos positivos, imaginación y todas estas herramientas para generar nuevas ideas que anotaras para poner en practica, pronto descubrirás que tendrás mas y mas ideas creativas de negocio y te sorprenderá recordar la manera cómo llegaste al curso y la nueva versión de ti mismo</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow p-3">
+                        
+                    <h6 class="fw-bold"> NUEVA FUENTE DE INGRESO</h6>
                     <p>En este nivel ya eres un experto estas por mas tiempo  consciente de estar consciente de ser y has obtenido numeroso logros con el cambio de hábitos al diseñar tu dia ahora estas mas que listo para tener nuevas experiencias e ir por más fuentes de ingresos, haz una sobrecarga de tu potencial ilimitado y crea más riqueza</p>
-
-                    <h5 class="fw-bold">CONSCIOUS TEAM</h5>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow p-3">
+                        
+                    <h6 class="fw-bold">CONSCIOUS TEAM</h6>
                     <p>Ahora que permaneces más tiempo del dia en tu nivel de consciencia busca al equipo indicado para delegar actividades,  desde la consciencia solo podrás tener en tu  equipo a la gente indicada, no puede ser de otra forma identificarás habilidades y nivel de consciencia de manera más natural para trabajar de manera más fluida, armoniosa y con mucho más resultado.</p>
-
-                    <h5 class="fw-bold"> CONTRIBUTION </h5>
-                    <p>Contribuye con la sociedad, esto se hace siempre y en cualquier nivel en que estés siempre es posible contribuir, la contribución es un estilo de vida, no esperas a tener mucho dinero para hacerlo, puedes iniciar desde el primer dia de curso, busca en qué ayudar, regala algo no tiene que ser dinero, desde unas palabras, un consejo ,una sonrisa y en otros niveles enseña a alguien a ganar dinero asi aprenderas mas enseña las técnicas que has aprendido para que todos tengan un propósito claro de vida</p>
-
-                    <h5 class="fw-bold">RE ENFOQUE DEL PROPÓSITO</h5>
-                    <p>La felicidad es un camino no es una meta, ahora tienes mas facilidad para definir nuevo propósito de vida donde ya está la contribución, la buena alimentación, el ejercicio , la práctica de ayunos, y donde te has planteado un legado, trabaja en tu legado de tal forma que lo vayas moldeando, perfeccionarlo y hazlo como ejemplo para crear esa masa crítica en otras partes.</p>
-		        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow p-3">
+                        <h6 class="fw-bold"> CONTRIBUTION </h6>
+                        <p>Contribuye con la sociedad, esto se hace siempre y en cualquier nivel en que estés siempre es posible contribuir, la contribución es un estilo de vida, no esperas a tener mucho dinero para hacerlo, puedes iniciar desde el primer dia de curso, busca en qué ayudar, regala algo no tiene que ser dinero, desde unas palabras, un consejo ,una sonrisa y en otros niveles enseña a alguien a ganar dinero asi aprenderas mas enseña las técnicas que has aprendido para que todos tengan un propósito claro de vida</p>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow p-3">
+                        <h6 class="fw-bold">RE ENFOQUE DEL PROPÓSITO</h6>
+                        <p>La felicidad es un camino no es una meta, ahora tienes mas facilidad para definir nuevo propósito de vida donde ya está la contribución, la buena alimentación, el ejercicio , la práctica de ayunos, y donde te has planteado un legado, trabaja en tu legado de tal forma que lo vayas moldeando, perfeccionarlo y hazlo como ejemplo para crear esa masa crítica en otras partes.</p>
+                    </div>
+                </div>
 		    </div>
+        -->
+            <div>
+                <header class=" text-end pe-4 ">
+                    <p>
+                        <span class="mueve btn btn-lg cursor-pointer btn-light     fw-bold" >&#139;</span>
+                        <span class="mueve btn btn-lg cursor-pointer btn-light fw-bold ">&#155;</span>
+                    </p>
+                </header>
+                <div class="m-auto d-flex hola" style="overflow-x: auto;" >
+                    <div class="product card me-2 position-relative rounded p-3 bg-warning ">
+                        <div class="card-body ">
+                            <h6 class="text-center fw-bold mb-4">FLUYE CON LA RIQUEZA</h6>
+                            <p class="small" >  Al convertirte en un ser mas alineado realizas los cambios internos y de consciencia para atraer mayores niveles de prosperidad, abundancia y riqueza, refuerza de manera natural tus creencias positivas del dinero y enfoca en la contribución para generar un flujo de efectivo que circule a través de ti, aceptas de una manera mas natural el dinero y entenderás que eres una fuente de atracción de la riqueza </p>
+                        </div>
+                    </div>
+                    <div class="product card me-2 position-relative rounded p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center mb-4">ACCIÓN PERFECTA-IMPERFECTA- API</h6>
+                            <p class="small">Desde este nivel actúa ya a pesar del miedo, a pesar de no tener las condiciones ideales, actúa y perfecciona en  el camino, descubre como para tener un negocio lo único que necesitas es hacer la primer acción, iniciar ya a pesar del miedo, adquirirás un mejor carácter y descubrirás que hay cientos de cosas que ya habrías hecho de haber actuado cuando lo pensaste, fortalece la determinación interna, la persistencia, la tenacidad, la alegría por los resultados, fortalece tu autoestima ahora mismo</p>
+                        </div>
+                    </div>
+                    <div class="product card shadow me-2 position-relative rounded p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center mb-4">RESUELVE TUS HISTORIAS Y EXCUSAS</h6>
+                            <p class="small">Descubre que las excusas y pretextos caen pos si mismas desde el momento de tomar acción, asociarlo con evento del pasado donde no actuaste por temor y miedo , fortalece esta creencia de "todo lo puedo" a través del teatro del infinito o desde la consciencia de ser, deja de una vez por todas las historias limitantes y obtén una imagen de ti mismo como cuando eras niño y todo lo podias, tenias poderes y eras el superhéroe, refuerza tu imagen de héroe y crea historias mas productivas que realicen y mantengan para siempre tu autoestima</p>
+                        </div>
+                    </div>
+                    <div class="card me-2 position-relative  rounded product shadow p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center mb-4">ASOCIA LA RIQUEZA A TU VIDA DIARIA</h6>
+                            <p class="small">Empieza a experimentar estos pensamientos y sentimientos de riqueza para que se conviertan en acciones y en resultados , manten este nivel energético diseñando tu dia, realiza las actividades que haz determinado para que generen confianza al obtener resultados, diseña el dia con los pensamientos y acciones de una persona rica y experimentarlo diario para vivir de esta forma</p>
+                        </div>
+                    </div>
+                    <div class="card me-2 position-relative  rounded product shadow p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center  mb-4">TU NUEVA VERSIÓN</h6>
+                            <p class="small">Al crear desde la consciencia, podrás utilizar tu cerebro con todas las herramientas de creatividad, diseño, emociones , pensamientos positivos, imaginación y todas estas herramientas para generar nuevas ideas que anotaras para poner en practica, pronto descubrirás que tendrás mas y mas ideas creativas de negocio y te sorprenderá recordar la manera cómo llegaste al curso y la nueva versión de ti mismo</p>
+                        </div>
+                    </div>
+                    <div class="card me-2 position-relative  rounded product shadow p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center mb-4"> NUEVA FUENTE DE INGRESO</h6>
+                            <p class="small">En este nivel ya eres un experto estas por mas tiempo  consciente de estar consciente de ser y has obtenido numeroso logros con el cambio de hábitos al diseñar tu dia ahora estas mas que listo para tener nuevas experiencias e ir por más fuentes de ingresos, haz una sobrecarga de tu potencial ilimitado y crea más riqueza</p>
+                        </div>
+                    </div>
+                    <div class="card me-2 position-relative  rounded product shadow p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center mb-4">CONSCIOUS TEAM</h6>
+                            <p class="small">Ahora que permaneces más tiempo del dia en tu nivel de consciencia busca al equipo indicado para delegar actividades,  desde la consciencia solo podrás tener en tu  equipo a la gente indicada, no puede ser de otra forma identificarás habilidades y nivel de consciencia de manera más natural para trabajar de manera más fluida, armoniosa y con mucho más resultado.</p>
+                        </div>
+                    </div>
+                    <div class="card me-2 position-relative  rounded product shadow p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center mb-4"> CONTRIBUTION </h6>
+                            <p class="small">Contribuye con la sociedad, esto se hace siempre y en cualquier nivel en que estés siempre es posible contribuir, la contribución es un estilo de vida, no esperas a tener mucho dinero para hacerlo, puedes iniciar desde el primer dia de curso, busca en qué ayudar, regala algo no tiene que ser dinero, desde unas palabras, un consejo ,una sonrisa y en otros niveles enseña a alguien a ganar dinero asi aprenderas mas enseña las técnicas que has aprendido para que todos tengan un propósito claro de vida</p>
+                        </div>
+                    </div>
+                    <div class="card me-2 position-relative  rounded product shadow p-3 bg-warning">
+                        <div class="card-body">
+                            <h6 class="fw-bold text-center mb-4">RE ENFOQUE DEL PROPÓSITO</h6>
+                            <p class="small">La felicidad es un camino no es una meta, ahora tienes mas facilidad para definir nuevo propósito de vida donde ya está la contribución, la buena alimentación, el ejercicio , la práctica de ayunos, y donde te has planteado un legado, trabaja en tu legado de tal forma que lo vayas moldeando, perfeccionarlo y hazlo como ejemplo para crear esa masa crítica en otras partes.</p>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+            
         </div>
     </div>
-    <!-- seccion 2 -->
-    <div class="container-fluid fondo5 text-white">
-        <div class="container pb-5 pt-5">   
-		    <div class="row"> 
-		        <div class="">
-                    <svg width="120" height="20" > 
-                        <rect x="0" y="10" width="60" height="8" fill="#ffffff" />
-                    </svg>
-			        <h3 ></h3>
-                    <hr>
-			        <p></p>
-		        </div>
-		    </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12 ">
-			        <img src="imagenes/persona-jugando-ajedrez_93675-73177.jpg" class="img-fluid " alt="kit de emprendimiento">	
-		        </div>
-		        <div class="col-md-6 col-sm-12 col-xs-12">
-			        
-                    
-		        </div>
-            </div>
-            <div class="row">
-                
-
-            </div>
-        </div>
-    </div>
+    
      
     <!--Seccion acordeon modulos-->
-    <div class="container-fluid bg-primary pt-5 pb-5">
-        <div class="container">
-            <h2 class="fw-bold text-white pt-3 pb-4">Contenido del taller</h2>
+    <div class="container-fluid  pt-5 pb-5">
+        <div class="container py-5">
+            <h3 class="fw-bold  pt-3 pb-4 text-uppercase text-center  ">Contenido del taller</h3>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header " id="headingOne">
-                        <button class="accordion-button collapsed bg-warning fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapsed bg-primary text-white fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Módulo 1
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p class="mb-0">Comienza a re programarte HOY MISMO.</p>
-                            <p class="mb-0">Usa nuestra metodología para facilitar un cambio duradero empezando desde el primer día.</p>
-                            <p class="mb-0">Descubre cómo liberarte de los miedos absurdos que tienes sobre el dinero.</p>
-                            <p class="mb-0">Cambia tus creencias por una verdaderamente auténticas.</p>
-                            <p class="mb-0">Descubre cómo ser tu propio coach del dinero aún en
-                            situaciones en las que te sientas bloqueado. </p>
+                            <ul>
+                                <li>Comienza a re programarte HOY MISMO.</li>
+                                <li>Usa nuestra metodología para facilitar un cambio duradero empezando desde el primer día.</li>
+                                <li>Descubre cómo liberarte de los miedos absurdos que tienes sobre el dinero.</li>
+                                <li>Cambia tus creencias por una verdaderamente auténticas.</li>
+                                <li>Descubre cómo ser tu propio coach del dinero aún en
+                                    situaciones en las que te sientas bloqueado.</li>
+                            </ul>
+                           
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Módulo 2
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>Como eliminar el auto-sabotaje del dinero en tu comportamiento.</p>
-                            <br><p>Cómo crear un nuevo legado de dinero y crear riqueza.</p>
-                            <br><p>Descubre el ejercicio más poderoso que te ayudará a transformar el sentimiento y los juicios en aceptación ,contribución y perdón (Esto te permitirá ganar más dinero con menos esfuerzo )</p>
+                            <ul>
+                                <li>Como eliminar el auto-sabotaje del dinero en tu comportamiento.</li>
+                                <li>Cómo crear un nuevo legado de dinero y crear riqueza.</li>
+                                <li>Descubre el ejercicio más poderoso que te ayudará a transformar el sentimiento y los juicios en aceptación ,contribución y perdón (Esto te permitirá ganar más dinero con menos esfuerzo )</li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Módulo 3
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p>Un plan de acción para eliminar cualquier tipo de pagos pendientes en tu vida.</p>
-                            <br><p>La estrategia más poderosa y sencilla para manejar tus pagos pendientes.</p>
-                            <br><p>Como terminar de resolver de una vez por todas tus pagos pendientes, sin limitarte financieramente.</p>
-                            <br><p>Cómo reconocer oportunidades de ingreso que están frente a ti.</p>
-                            <br><p>El poder liberador de eliminar culpas y resentimientos.</p> 
-                            <br><p>Como restaurar tu vedadero valor para crear un futuro brillante. </p>
+                            <ul>
+                                <li>Un plan de acción para eliminar cualquier tipo de pagos pendientes en tu vida.</li>
+                                <li>La estrategia más poderosa y sencilla para manejar tus pagos pendientes.</li>
+                                <li>Como terminar de resolver de una vez por todas tus pagos pendientes, sin limitarte financieramente.</li>
+                                <li>Cómo reconocer oportunidades de ingreso que están frente a ti.</li>
+                                <li>El poder liberador de eliminar culpas y resentimientos.</li>
+                                <li>Como restaurar tu vedadero valor para crear un futuro brillante. </li>
+                            </ul>
+                        
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             Módulo 4
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body bg-success">
-                            <p>Los tres números más importantes en la generación de ingresos.</p>
-                            <p>El verdadero significado escondido de la resistencia a ganar más dinero y como eliminar este obstáculo de tu vida para siempre.</p>
-                            <p>Que hacer para ganar más ahorrar más y no limitante en tus gastos 3 poderosos principios que diagnosticaran tu situación financiera.</p>
-                            <p>Cómo crear una conexión emocional fuerte y positiva con el dinero.</p>
+                        <div class="accordion-body ">
+                            <ul>
+                                <li>Los tres números más importantes en la generación de ingresos.</li>
+                                <li>El verdadero significado escondido de la resistencia a ganar más dinero y como eliminar este obstáculo de tu vida para siempre.</li>
+                                <li>Que hacer para ganar más ahorrar más y no limitante en tus gastos 3 poderosos principios que diagnosticaran tu situación financiera.</li>
+                                <li>Cómo crear una conexión emocional fuerte y positiva con el dinero.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             Módulo 5
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p class="mb-0">Reprograma tu mente para siempre.</p>
-                            <br><p>Gana más dinero desde la primera semana.</p>
-                            <br><p>Como reconocer tus emociones detrás de los puntos ciegos del dinero y como eliminarlos.</p>
-                            <br><p>Como tomar desiciones respecto al dinero fácil y con confianza. </p>
+                            <ul>
+                                <li>Reprograma tu mente para siempre.</li>
+                                <li>Gana más dinero desde la primera semana.</li>
+                                <li>Como reconocer tus emociones detrás de los puntos ciegos del dinero y como eliminarlos.</li>
+                                <li>Como tomar desiciones respecto al dinero fácil y con confianza. </li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -302,103 +477,153 @@
         </div>
     </div>
     <!--seccion informacion taller-->
-    <div class="container-fluid gris">
+    <div class="container-fluid gris py-5">
         <div class="container pt-5 pb-5">
-            <svg width="120" height="20" > 
-                        <rect x="0" y="10" width="60" height="8" fill="#17202A" />
-                    </svg>
-            <h3 class="fw-bold" >Información del taller</h3>
-            <div class="row text-white elazul p-3 mt-3">
-                <div class="col-md-3 col-sm-12 col-xs-12 border-end border-white ">
-                    <h3 class="">Temario</h3>
-                    <p>Sabado</p>
-                    <ul>
-                        <li>Como liberarte del miedo al dinero</li>
-                        <li>Como eliminar el auto-sabotaje</li>
-                        <li>Como crear un nuevo legado</li>
-                    </ul>
-                    <p>Dinamica</p>
-                    <ul>
-                        <li>Intercambio de valor</li>
-                        <li>Teatro del infinito</li>
-                    </ul>
+            <h3 class="fw-bold text-uppercase  text-center mb-5" >Información del taller</h3>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card shadow p-3  bg-primary text-white ">
+                        <h6 class="text-uppercase text-center  card-title text-warning mb-4">Programa </h6>
+                        <div class="row" >
+                            <div class="col">
+                                <p>Sabado</p>
+                                <ul>
+                                    <li>Como liberarte del miedo al dinero</li>
+                                    <li>Como eliminar el auto-sabotaje</li>
+                                    <li>Como crear un nuevo legado</li>
+                                </ul>
+                                <p>Dinamica</p>
+                                <ul>
+                                    <li>Intercambio de valor</li>
+                                    <li>Teatro del infinito</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <p class="">Domingo</p>
+                                <ul>
+                                    <li>Conexión emocional</li>
+                                    <li>Re Programa tu mente</li>
+                                    <li>Plan de acción</li>
+                                </ul>
+                                <p>Dinamica</p>
+                                <ul>
+                                    <li>Re-programación (Método Silva)</li>
+                                    <li>Confianza (Ojos vendados )</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 border-end border-white">
-                    <p class="pt-4">Domingo</p>
-                    <ul>
-                        <li>Conexión emocional</li>
-                        <li>Re Programa tu mente</li>
-                        <li>Plan de acción</li>
-                    </ul>
-                    <p>Dinamica</p>
-                    <ul>
-                        <li>Re-programación (Método Silva)</li>
-                        <li>Confianza (Ojos vendados )</li>
-                    </ul>
-
+                <div class="col">
+                    <div class="card bg-primary p-3 h-100 shadow">
+                        <h6 class="pt-3 text-center text-warning text-uppercase ">Horarios</h6>
+                        <div class="text-white pt-3"> 
+                            <p class="">Sabado 9-18 Hrs</p>
+                            <p>Domingo 9-14 Hrs</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 border-end border-white">
-                    <h3 class="pt-3">Horarios</h3>
-                    <p class="pt-5">Sabado 9-18 Hrs</p>
-                    <p>Domingo 9-14 Hrs</p>
-                    
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <h3 class="pt-3">Costo</h3>
-                    <p class="pt-5">$ 12,000.00</p>
-                    <hr>
-                    <p>Beca Sharing Mind $ 11,500.00</p>
-                    <hr>
-                    <p>Pago Único $ 500.00</p>
-                    
+                <div class="col">
+                    <div class="card bg-primary p-3 h-100 shadow">
+                        <h6 class="pt-3 text-center text-warning text-uppercase">Costo</h6>
+                        <div class="text-white pt-3">
+                            <p class="">$ 12,000.00</p>
+                            <hr>
+                            <p>Beca Sharing Mind $ 11,500.00</p>
+                            <hr>
+                            <p>Pago Único $ 500.00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- forulario  -->
-    <div class="container-fluid ">
-        <div class="container">
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
             <div class="row mt-5 pb-5">
-                <svg width="120" height="20" > 
-                        <rect x="0" y="10" width="60" height="8" fill="#17202A" />
-                    </svg>
-                <h2>Inscribete a nuestro taller</h2>
-                <p class="text-center">formulario</p>
-                <form class="text-center bg-light" action="">
-                    <p><label>Tu nombre: <input type="text" name="nombre" placeholder="Nombre completo"></label></p>
-                    <p><label>Tu Correo: <input type="text" name="nombre" placeholder="Nombre completo"></label></p>
-                    <p><label>Tu teléfono: <input type="text" name="nombre" placeholder="Nombre completo"></label></p>
-                    <p><input type="submit" value="Enviar mensaje"></p>
+                <h3 class="text-uppercase text-center fw-bold mb-5">Inscribete a nuestro taller</h3>
+                <div class="px-5">
+
                 
-                </form>
+                <table class=""  style="min-width: 50%;">
+                    <tbody>
+                    <tr class="">
+                        <td class="mb-5">
+                            <input class="espacio mb.5" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" placeholder="Nombre" data-required="true" required />
+                            <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                            </label>
+                        </td> 
+                        <td class="mb-5">
+                            <input class="espacio" maxlength="200" type="text" id="APELLIDOS" name="APELLIDOS" autocomplete="off" placeholder="Apellidos" data-required="true" required /> 
+                        </td> 
+                    </tr>
+                    <tr>
+                        <th class="pe-1 mb-5">
+                            <input class="espacio" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Correo electrónico" data-required="true" required />
+                        </th> 
+                        <th class="mb-5">
+                            <input maxlength="200" type="text" data-numeric="true" class="espacio" id="TELEFONO" name="TELEFONO" autocomplete="off"
+                            placeholder="Teléfono con lada" data-required="true" required />
+                        </th> 
+                    </tr>
+                    <tr> 
+                        <td colspan="" class="mb-5">
+                            <input class="espacio" maxlength="200" type="text" id="EMPRESA" name="EMPRESA" autocomplete="off" placeholder="Empresa" data-required="true" required />
+                        </td>
+                        <td>
+                            <input class="espacio" maxlength="200" type="text" id="CARGO" name="CARGO" autocomplete="off" placeholder="Cargo" data-required="true" required />                                                </td>
+                    </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
             </div>
 
         </div>
     </div>
     <!-- footer  -->
-    <div class="container-fluid elazul ">
+    <div class="container-fluid bg-primary ">
         <div class="container text-white pt-5 pb-3">
             <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h5> Sobre nosotros </h5>
-                    <p> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqu</p>
+                <div class="col-md-3 col-sm-12 col-xs-12 ">
+                    <img class="img-fluid w-75" src="imagenes/eljuegoblanco.svg" alt="">
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12">
-                    <h5>Nuestros talleres </h5>
-                    <li>Emprendimiento conciente</li>
-                    <li>El juego del dinero</li>
+                    <h6 class="text-warning text-uppercase"> Nosotros</h6>
+                    <p class="small"> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqu</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h6 class="text-uppercase text-warning">Talleres </h6>
+                    <ul class="list-unstyled small">
+                        <li>Emprendimiento conciente</li>
+                        <li>El juego del dinero</li>
+                    </ul>
+                    
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12">  
-                    <h5>otros</h5>
-                    <p>Contacto</p>
+                    <h6 class="text-warning text-uppercase">Contacto</h6>
+                    <p class="small">55 66448877</p>
                 </div>
             </div>
         </div>
+        <div class="py-3">
+            <p class="text-white mb-0 text-center "> <small> EL JUEGO DEL DINERO &nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;   </small>  <a class="text-decoration-none  text-white" href=""> Privacidad </a> </p>
+        </div>
     </div>
+    
 
 
 
     <!--scripts-->
+    <script src="js/lazysizes.min.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--PARA SLIDER-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
