@@ -9,54 +9,65 @@
     <!--links-->
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"  type="text/css"  onload="this.onload=null;this.rel='stylesheet'" href="estilos/estilos.css">
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"  type="text/css" onload="this.onload=null;this.rel='stylesheet'" href="sass/customizar.css" >
+    <!--
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"  >
+    -->
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+
     <style type="text/css">
-    	
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .texto-gris{
+            color: #4b4b4b;
+        }
+
     	
     </style>
 
 </head>
 <body>
-	<!--  menu de navegación  -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid ">
-            <a class="navbar-brand" href="index.html">
-              <img src="imagenes/favicon.png"alt="logo" width="60" height="55">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                	<li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="emprendimiento.html">emprendimiento conscinte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="juego.html">el juego del dinero</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
     <!-- seccion 2 -->
-    <div class="jumbotron-fluid alto2 pt-5 pb-5 fondo3">  
+    <div class="jumbotron-fluid alto  pb-5 fondo3">  
+		<nav class="navbar navbar-expand-sm navbar border-bottom border-white border-1">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="imagenes/eljuegoblanco.svg" width="80" height="auto"   alt=""> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li class=""><a class="dropdown-item fw-bold" href="emprendimiento.html"> Emprendimiento <br> Consciente</a></li>
+                                <li class=""><a class="dropdown-item fw-bold" href="juego.html"> El Juego <br> del Dinero </a></li>
+                            </ul>
+                        </li>                   
+                    </ul>
+                </div>
+            </div>
+        </nav>
     	<div class="container pb-5 pt-5">
-     		<h1 class="display-3 fw-bold "> Emprendimiento Consciente</h1>
-            <p class="text-white  tprincipal2 text-center">Conviértete en un entrepreneur exitoso en sólo 4 semanas.
+     		<h1 class="text-center text-uppercase fw-bold mt-5"> Emprendimiento Consciente</h1>
+            <p class="  tprincipal2 text-center">Conviértete en un entrepreneur exitoso en sólo 4 semanas.
             <br>
             <br>En este viaje de 4 semanas aprenderás a superar los 8 bloqueos que evitan que la gran mayoría de los emprendedores y STARTUPS tengan verdadero éxito en sus emprendimientos</p>
-      		<p class="text-center"><a class="btn btn-light btn-lg " href="#registrate"> Regístrate </a></p>
+      		<p class="text-center"><a class="btn btn-outline-primary " href="#registrate"> Regístrate </a></p>
     	</div>
   	</div>
-	  <!--seccion fecha y registro -->
-	  <div class="container-fluid shadow ">
+	<!--seccion fecha y registro -->
+    <div class="container-fluid shadow ">
         <div class="container">
             <div class="row pt-3">
                 <div class="col">
@@ -68,35 +79,31 @@
                     <h4 class="text-center fs-6"><strong> Proxima fecha </strong></h4>
                 </div>
                 <div class="col border-start border-primary">
-                    <p class="text-center pt-3"> <a class="btn btn-secondary btn-lg text-white shadow" href="#registrate"> Regístrate </a></p>
+                    <p class="text-center pt-3"> <a class="btn btn-outline-primary  shadow" href="#registrate"> Regístrate </a></p>
                 </div>
             </div>
         </div>
     </div>
   	<!-- seccion 2 -->
-    <div class="container-fluid">
+    <div class="container-fluid py-5">
         <div class="container pb-5 pt-5">   
 		    <div class="row"> 
 		        <div class="col-md-6 col-sm-12 col-xs-12">
-		        	<svg width="120" height="20" > 
+		        	<!--
+                    <svg width="120" height="20" > 
 		        		<rect x="0" y="10" width="60" height="8" fill="MidnightBlue" />
 					</svg>
-			        <h2 class="">¿Qué aprenderas en este taller?</h2>
-                    <hr>
-			        <ul>
-			        	<li>
-			        		<p>Conocerás como se divide el mundo finaciero y sus caracterisiticas</p>
-			        	</li>
-			        	<li>
-			        		<p>Aprenderás como cambiar tu mentalidad para poder emprender </p>
-			        	</li>
-			        	<li>
-			        		<p> Aprenderas a reconocer lo que realmente eres y utilizar tu parte espiritual para generar ingresos</p>			        		
-			        	</li>
+                -->
+			        <h3 class="fw-bold text-uppercase ">¿Qué aprenderas en este taller?</h3>
+                    <hr class="mb-5">
+			        <ul class="texto-gris">
+			        	<li>Conocerás como se divide el mundo finaciero y sus caracterisiticas</li>
+			        	<li>Aprenderás como cambiar tu mentalidad para poder emprender </li>
+			        	<li>Aprenderas a reconocer lo que realmente eres y utilizar tu parte espiritual para generar ingresos     		</li>
 			        </ul>
 		        </div>
 		        <div class="col-md-6 col-sm-12 col-xs-12 ">
-			        <img src="imagenes/handsome-business-man-working-with-tablet-in-office.jpg" class="img-fluid " alt="kit de emprendimiento">	
+			        <img  data-src="imagenes/handsome-business-man-working-with-tablet-in-office.jpg" class="img-fluid lazyload rounded shadow" alt="kit de emprendimiento">	
 		        </div>
 		    </div>
         </div>
@@ -106,16 +113,16 @@
         <div class="container pb-5 pt-5">   
 		    <div class="row"> 
                 <div class="col-md-6 col-sm-12 col-xs-12 ">
-			        <img src="imagenes/handsome-business-man-working-with-tablet-in-office.jpg" class="img-fluid " alt="kit de emprendimiento">	
+			        <img data-src="imagenes/handsome-business-man-working-with-tablet-in-office.jpg" class="img-fluid lazyload rounded shadow" alt="kit de emprendimiento">	
 		        </div>
 		        <div class="col-md-6 col-sm-12 col-xs-12">
 		        	<svg width="120" height="20" > 
 		        		<rect x="0" y="10" width="60" height="8" fill="MidnightBlue" />
 					</svg>
-			        <h3 class="pb-3">Be my partner <br> Seamos socios</h3>
-                    <hr>
+			        <h3 class="text-uppercase fw-bold ">Be my partner <br> Seamos socios</h3>
+                    <hr class="mb-4">
 			        <p>Únete y descubre cómo generar ingresos adicionales y contribuir con la comunidad emprendedora de México y el mundo. Colaboremos para crear una red de personas libres, conscientes y emprendedoras.   </p>
-			        <h3>Libertad financiera y emprendimiento </h3>
+			        <h6 class="text-uppercase my-4">  Libertad financiera y emprendimiento </h6>
 			        <p> Te facilitamos las estrategias, herramientas y recursos que te ayudarán a desarrollar tu proyecto de vida, lograr el exito financiero y tu libertad total.</p>
 		        </div>
 		        
@@ -137,7 +144,7 @@
 			        <br>Conviértete en un inversionista exitoso de la bolsa de NY en sólo unas semanas.
 			        <br>
 					<br>Este entrenamiento de inversiones te revelará cómo invertir tu capital correctamente con un sencillo sistema probado que te convertirá en un inversionista exitoso en menos de lo que te imaginas.</p>
-					<h4>Conoce los secretos de las inversiones y utilízalos en tu vida.</h4>
+					<h6> <i> Conoce los secretos de las inversiones y utilízalos en tu vida.</i></h6>
 		        </div>
 		        <div class="col-md-6 col-sm-12 col-xs-12 ">
 			        <img src="imagenes/handsome-business-man-working-with-tablet-in-office.jpg" class="img-fluid " alt="kit de emprendimiento">	
@@ -257,45 +264,85 @@
         </div>
     </div>
     <!-- forulario  -->
-    <div class="container-fluid gris">
-        <div class="container">
-            <div class="row">
-            	<svg width="120" height="20" > 
-		        		<rect x="0" y="10" width="60" height="8" fill="MidnightBlue" />
-					</svg>
-                <h2>regístrate a nuestro taller</h2>
-                <p class="text-center">formulario</p>
-                <form class="text-center bg-light" action="">
-                    <p><label>Tu nombre: <input type="text" name="nombre" placeholder="Nombre completo"></label></p>
-                    <p><label>Tu Correo: <input type="text" name="nombre" placeholder="Nombre completo"></label></p>
-                    <p><label>Tu teléfono: <input type="text" name="nombre" placeholder="Nombre completo"></label></p>
-                    <p><input type="submit" value="Enviar mensaje"></p>
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+            <div class="row mt-5 pb-5">
+                <h3 class="text-uppercase text-center fw-bold mb-5">Inscribete a nuestro taller</h3>
+                <div class="px-5">
+
                 
-                </form>
+                <table class=""  style="min-width: 50%;">
+                    <tbody>
+                    <tr class="">
+                        <td class="mb-5">
+                            <input class="espacio mb.5" maxlength="200" type="text" id="NOMBRE" name="NOMBRE" autocomplete="off" placeholder="Nombre" data-required="true" required />
+                            <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                            </label>
+                        </td> 
+                        <td class="mb-5">
+                            <input class="espacio" maxlength="200" type="text" id="APELLIDOS" name="APELLIDOS" autocomplete="off" placeholder="Apellidos" data-required="true" required /> 
+                        </td> 
+                    </tr>
+                    <tr>
+                        <th class="pe-1 mb-5">
+                            <input class="espacio" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Correo electrónico" data-required="true" required />
+                        </th> 
+                        <th class="mb-5">
+                            <input maxlength="200" type="text" data-numeric="true" class="espacio" id="TELEFONO" name="TELEFONO" autocomplete="off"
+                            placeholder="Teléfono con lada" data-required="true" required />
+                        </th> 
+                    </tr>
+                    <tr> 
+                        <td colspan="" class="mb-5">
+                            <input class="espacio" maxlength="200" type="text" id="EMPRESA" name="EMPRESA" autocomplete="off" placeholder="Empresa" data-required="true" required />
+                        </td>
+                        <td>
+                            <input class="espacio" maxlength="200" type="text" id="CARGO" name="CARGO" autocomplete="off" placeholder="Cargo" data-required="true" required />                                                </td>
+                    </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
             </div>
 
         </div>
     </div>
-    <!-- footer  -->
-    <div class="container-fluid elazul ">
+     <!-- footer  -->
+	 <div class="container-fluid bg-primary ">
         <div class="container text-white pt-5 pb-3">
             <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h5> Sobre nosotros </h5>
-                    <p> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqu</p>
+                <div class="col-md-3 col-sm-12 col-xs-12 ">
+                    <img class="img-fluid w-75" src="imagenes/eljuegoblanco.svg" alt="">
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12">
-                    <h5>Nuestros talleres </h5>
-                    <li>Emprendimiento conciente</li>
-                    <li>El juego del dinero</li>
+                    <h6 class="text-warning text-uppercase"> Nosotros</h6>
+                    <p class="small"> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliqu</p>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h6 class="text-uppercase text-warning">Talleres </h6>
+                    <ul class="list-unstyled small">
+                        <li>Emprendimiento conciente</li>
+                        <li>El juego del dinero</li>
+                    </ul>
+                    
                 </div>
                 <div class="col-md-3 col-sm-12 col-xs-12">  
-                    <h5>otros</h5>
-                    <p>Contacto</p>
+                    <h6 class="text-warning text-uppercase">Contacto</h6>
+                    <p class="small">55 66448877</p>
                 </div>
             </div>
         </div>
+        <div class="py-3">
+            <p class="text-white mb-0 text-center "> <small> EL JUEGO DEL DINERO &nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;   </small>  <a class="text-decoration-none  text-white" href=""> Privacidad </a> </p>
+        </div>
     </div>
+
+
+
+	 <!--scripts-->
+	 <script src="js/lazysizes.min.js" async></script>
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
     
 
 
