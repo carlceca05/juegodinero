@@ -25,12 +25,12 @@
     background-position: center;
 }
 .fondo5{
-    background-image: radial-gradient(circle at right,rgb(234, 78, 78,1 ) 0%, rgba(183, 35, 35, 1) 100% ),   url("../imagenes/persona-jugando-ajedrez_93675-73177.jpg");
+    background-image:radial-gradient(circle at right,rgba(0,0,0,0.42) 0%,rgba(21,28,50,0.94) 60%),   url("../imagenes/persona-jugando-ajedrez_93675-73177.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-radial-gradient(circle at right,rgba(0,0,0,0.12) 0%,rgba(9,16,25,0.93) 60%)
+
 .elazul{
     background-color:#34495E  ;
 }
@@ -59,11 +59,13 @@ radial-gradient(circle at right,rgba(0,0,0,0.12) 0%,rgba(9,16,25,0.93) 60%)
     right: 5%;
     width: 75%;
 }
+
 @media only screen and (min-width: 900px) and (max-width: 3000px){
     .aparece{
         display: none;
     }
 }
+
 @media only screen and (min-width:100px) and (max-width:900px){
  .tprincipal {
     margin-top: 190px;   
@@ -88,3 +90,4 @@ div::-moz-scrollbar{
 	.hola .product {
 	    min-width: 99%;
 	}
+}
